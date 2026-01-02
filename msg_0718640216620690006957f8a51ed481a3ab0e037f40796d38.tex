@@ -1,0 +1,112 @@
+\begin{document}
+
+%--------------- Header (centered) --------------- 
+\begin{center}
+  {\Large \textbf{Arumalla Mohit Krishna}} \\
+  New York, USA \\
+  +1-631-352-8643 \enspace | \enspace marumalla@cs.stonybrook.edu \enspace | \enspace \href{https://linkedin.com/in/mohit-krishna-arumalla}{linkedin.com/in/mohit-krishna-arumalla}
+\end{center}
+
+%--PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Results-driven \textbf{Software Engineer} with 2+ years of experience specializing in building \textbf{scalable distributed systems}, backend microservices, and \textbf{low-latency high-performance} applications. Proficient in \textbf{Golang}, \textbf{C++}, and \textbf{Apache Flink} to develop \textbf{production-grade systems} handling millions of records and real-time data pipelines. Experienced in distributed systems design including \textbf{Raft consensus}, \textbf{RDMA optimization}, and backend service development. Adept at collaborating with cross-functional teams in Agile environments to deliver reliable, tested solutions driving business impact and enhancing system scalability, availability, and performance.
+    }}
+  \end{itemize}
+\vspace{-16pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}: Golang (Production), C++ (Distributed Systems), Java, Python, JavaScript, SQL (PostgreSQL) \\
+     \textbf{Backend and Cloud}: RESTful APIs, gRPC, Microservices, AWS (EC2, S3, Lambda, Titan), Docker, Kubernetes, Linux \\
+     \textbf{Distributed Systems}: Apache Flink, Kafka, CDC, Raft Consensus, RDMA, Paxos, RPC, Low-latency Backend Development \\
+     \textbf{Data and AI}: PostgreSQL, Elasticsearch, Redis, RocksDB, Vector DBs, RAG, ML Pipelines, Real-time Aggregation \\
+     \textbf{DevOps}: CI/CD, NGINX, New Relic, Airflow, Performance Profiling, Swagger/OpenAPI, Automated Testing \\
+     \textbf{Networking}: TCP/IP, DNS, DHCP, RDMA, Network Performance Optimization \\
+     \textbf{Development Practices}: Agile/Scrum, Code Reviews, System Design, Performance Optimization, Clean Code Principles
+    }}
+ \end{itemize}
+\vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\textbf{Infra.Market}}{\textbf{Apr 2024 -- Aug 2025}}
+      {Software Engineer II}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{scalable microservices} and backend APIs using gRPC and REST, supporting hierarchical location structures with full CRUD and integration with business intelligence tools (Looker).}
+        \resumeItem{Optimized backend service handling 50K+ daily queries, reducing memory footprint by 70\% and eliminating GC pauses and OOM errors, enhancing \textbf{system availability} and performance.}
+        \resumeItem{\textbf{Designed and implemented real-time distributed data pipelines} using Apache Flink, Kafka, and CDC that process 5M+ records synchronizing PostgreSQL to Elasticsearch at sub-second latency using RocksDB state backend.}
+        \resumeItem{Built a dynamic indexing system enabling 100+ field faceted search, improving product discovery speed by 35\% for 200+ users and increasing conversions.}
+        \resumeItem{Architected an AI-driven RAG backend system serving 100K+ monthly queries combining Elasticsearch vector DB with AWS Titan Embeddings to boost CTR by 28\%, reducing zero-result searches by 45\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\textbf{Infra.Market}}{\textbf{Jul 2023 -- Mar 2024}}
+      {Software Engineer I}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Maintained and enhanced Search and Location microservices deployed in distributed cloud infrastructure, delivering backend APIs with gRPC and REST endpoints supporting geo-distributed queries.}
+        \resumeItem{Resolved critical connection leaks in PostgreSQL backend services using Gorm ORM and implemented concurrency-safe fixes validated by extensive load testing to ensure \textbf{system reliability} at high traffic.}
+        \resumeItem{Standardized API documentation using Swagger/OpenAPI and deployed distributed tracing with New Relic for end-to-end observability and monitoring of backend services.}
+        \resumeItem{Developed Airflow pipelines migrating datasets from BigQuery to Elasticsearch, optimizing query performance and dynamic filters for enhanced data processing.}
+        \resumeItem{Implemented proactive monitoring with Slack alerts for stale Elasticsearch indexes and data pipeline issues, ensuring \textbf{system availability} and quick incident response.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Master of Science in Computer Science}{\textbf{Aug 2025 -- May 2027}}
+      {Stony Brook University, New York, USA}{GPA: 4.0/4.0}
+      \resumeItemListStart
+        \resumeItem{\textbf{Coursework}: Database Systems, Analysis of Algorithms, Transformer Architectures \& LLMs}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Bachelor of Engineering in Electronics \& Communication}{\textbf{Aug 2019 -- July 2023}}
+      {Birla Institute of Technology and Science, Pilani, India}{GPA: 8.02/10}
+      \resumeItemListStart
+        \resumeItem{\textbf{Coursework}: Object Oriented Programming, Operating Systems, Data Structures \& Algorithms, Computer Networks}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{RDMA-Accelerated Distributed Transactions} -- \emph{C++, RDMA, Distributed Systems}}{\textbf{Nov 2025 -- Ongoing}}
+          \resumeItemListStart
+            \resumeItem{Architecting RDMA integration for distributed transaction replication targeting 30-50\% latency reduction and 40-60\% CPU improvement over TCP/IP by implementing one-sided RDMA operations for Paxos-based log shipping.}
+            \resumeItem{Designing remote memory layout and RDMA connection management with both two-sided verbs and one-sided operations for commit notifications, researching Motor (OSDI '24), FaRM, and DrTM for low-latency protocols.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{Raft Consensus Protocol} -- \emph{C++, RPC, Distributed Systems}}{\textbf{Sept 2025 -- Nov 2025}}
+          \resumeItemListStart
+            \resumeItem{Implemented Raft consensus algorithm in C++ achieving distributed consensus across 5-node clusters with leader election, log replication, and fault tolerance maintaining 99.9\% availability under network partitions and split-brain scenarios.}
+            \resumeItem{Built custom RPC protocol with RequestVote and AppendEntries handlers, managing timeouts and ensuring sub-5-second leader election with consistent state replication.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{Elasticsearch Configuration Service} -- \emph{Golang, Elasticsearch}}{\textbf{Apr 2025 -- Jul 2025}}
+          \resumeItemListStart
+            \resumeItem{Engineered platform abstraction layer with self-serve RESTful APIs for Elasticsearch operations, enabling teams to provision search infrastructure without specialized expertise.}
+            \resumeItem{Designed Golang backend services for automated index lifecycle management, schema versioning, and query optimization, reducing setup time by 70\% with infrastructure-as-code and rollback capabilities.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+\end{document}
