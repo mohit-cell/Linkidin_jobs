@@ -10,6 +10,9 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -84,22 +87,13 @@
   +1-631-352-8643 \enspace | \enspace marumalla@cs.stonybrook.edu \enspace | \enspace \href{https://linkedin.com/in/mohit-krishna-arumalla}{linkedin.com/in/mohit-krishna-arumalla}
 \end{center}
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Master of Science in Computer Science}{\textbf{Aug 2025 -- May 2027}}
-      {Stony Brook University, New York, USA}{GPA: 4.0/4.0}
-      \resumeItemListStart
-        \resumeItem{\textbf{Coursework}: Database Systems, Analysis of Algorithms, Transformer Architectures \& LLMs}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Bachelor of Engineering in Electronics \& Communication}{\textbf{Aug 2019 -- July 2023}}
-      {Birla Institute of Technology and Science, Pilani, India}{GPA: 8.02/10}
-      \resumeItemListStart
-        \resumeItem{\textbf{Coursework}: Object Oriented Programming, Operating Systems, Data Structures \& Algorithms, Computer Networks}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+%--PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Results-driven \textbf{Software Engineer} with 2+ years of experience specializing in building \textbf{scalable distributed systems}, backend microservices, and data-intensive applications. Proficient in \textbf{Golang}, \textbf{C++}, and \textbf{Apache Flink} to develop high-performance, production-grade systems handling millions of records. Experienced in distributed systems design including \textbf{Raft consensus}, \textbf{RDMA optimization}, and real-time data pipelines. Adept at collaborating with cross-functional teams using Agile methodologies to deliver reliable, tested solutions that drive business impact and improve system performance.
+    }}
+  \end{itemize}
 \vspace{-16pt}
 
 %-----------TECHNICAL SKILLS-----------
@@ -107,11 +101,12 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}: Golang (Production), C++ (Distributed Systems), Java, Python, JavaScript, SQL (PostgreSQL) \\
-     \textbf{Backend \& Cloud}: RESTful APIs, gRPC, Microservices, AWS (EC2, S3, Lambda, Titan), Docker, Kubernetes, Linux \\
+     \textbf{Backend and Cloud}: RESTful APIs, gRPC, Microservices, AWS (EC2, S3, Lambda, Titan), Docker, Kubernetes, Linux \\
      \textbf{Distributed Systems}: Apache Flink, Kafka, CDC, Raft Consensus, RDMA, Paxos, RPC \\
-     \textbf{Data \& AI}: PostgreSQL, Elasticsearch, Redis, RocksDB, Vector DBs, RAG, ML Pipelines, Real-time Aggregation \\
+     \textbf{Data and AI}: PostgreSQL, Elasticsearch, Redis, RocksDB, Vector DBs, RAG, ML Pipelines, Real-time Aggregation \\
      \textbf{DevOps}: CI/CD, NGINX, New Relic, Airflow, Performance Profiling, Swagger/OpenAPI, Automated Testing \\
-     \textbf{Networking}: TCP/IP, DNS, DHCP, RDMA, Network Performance Optimization
+     \textbf{Networking}: TCP/IP, DNS, DHCP, RDMA, Network Performance Optimization \\
+     \textbf{Development Practices}: Agile/Scrum, Code Reviews, System Design, Performance Optimization, Clean Code Principles
     }}
  \end{itemize}
 \vspace{-16pt}
@@ -142,6 +137,24 @@
         \resumeItem{Implemented automated monitoring with Slack alerts for stale index detection across Elasticsearch, BigQuery, and Airflow, enabling proactive infrastructure maintenance.}
       \resumeItemListEnd
 
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Master of Science in Computer Science}{\textbf{Aug 2025 -- May 2027}}
+      {Stony Brook University, New York, USA}{GPA: 4.0/4.0}
+      \resumeItemListStart
+        \resumeItem{\textbf{Coursework}: Database Systems, Analysis of Algorithms, Transformer Architectures \& LLMs}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Bachelor of Engineering in Electronics \& Communication}{\textbf{Aug 2019 -- July 2023}}
+      {Birla Institute of Technology and Science, Pilani, India}{GPA: 8.02/10}
+      \resumeItemListStart
+        \resumeItem{\textbf{Coursework}: Object Oriented Programming, Operating Systems, Data Structures \& Algorithms, Computer Networks}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 \vspace{-16pt}
 
