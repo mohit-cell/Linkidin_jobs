@@ -1,0 +1,187 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\bullet$}
+\renewcommand\labelitemii{$\bullet$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%--------------- Header (centered) --------------- 
+\begin{center}
+  {\Large \textbf{Arumalla Mohit Krishna}} \\
+  New York, USA \\
+  +1-631-352-8643 \enspace | \enspace marumalla@cs.stonybrook.edu \enspace | \enspace \href{https://linkedin.com/in/mohit-krishna-arumalla}{linkedin.com/in/mohit-krishna-arumalla}
+\end{center}
+
+%--PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Driven \textbf{Software Engineer} with 2+ years of experience in designing and building \textbf{scalable backend systems} and data-intensive platforms. Skilled in \textbf{Golang}, \textbf{C++}, and familiar with modern full-stack technologies including \textbf{Python}, \textbf{JavaScript}, and RESTful APIs. Experienced in collaborating with cross-functional teams and agile environments to deliver production-ready solutions that balance performance, security, and user experience. Enthusiastic to contribute to \textbf{usage-based billing systems} and data-driven product features while growing through mentorship and hands-on software development in diverse technologies.
+    }}
+  \end{itemize}
+\vspace{-16pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}: Golang, C++, Python, Java, JavaScript (TypeScript), SQL (PostgreSQL) \\
+     \textbf{Backend and Cloud}: RESTful APIs, gRPC, Microservices, AWS (EC2, S3, Lambda), Docker, Kubernetes, Linux \\
+     \textbf{Distributed Systems \& Data}: Apache Flink, Kafka, CDC, Elasticsearch, Raft Consensus, RPC \\
+     \textbf{Development Practices}: Agile/Scrum, Code Reviews, CI/CD, OpenAPI/Swagger, Automated Testing \\
+     \textbf{Collaboration}: Git, Code Reviews, Cross-functional teamwork, Clear communication, Mentorship
+    }}
+ \end{itemize}
+\vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\textbf{Infra.Market}}{\textbf{Apr 2024 -- Aug 2025}}
+      {Software Engineer II}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Designed and developed scalable microservices with RESTful and gRPC APIs, supporting complex location-based queries and dynamic search features used by product and finance workflows.}
+        \resumeItem{Optimized backend service for 50K+ daily queries reducing memory usage by 70\%, eliminating GC pauses and improving system stability in production.}
+        \resumeItem{Developed a real-time distributed data pipeline with Apache Flink, Kafka, and CDC syncing millions of records for usage insights and operational metrics, cutting latency to 500ms.}
+        \resumeItem{Implemented backend solutions enabling dynamic faceted search and data-driven discovery for 200+ users, contributing to improved user experience and conversion.}
+        \resumeItem{Built AI-driven retrieval-augmented generation (RAG) system integrating vector databases and embeddings for enhanced information retrieval and customer satisfaction.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\textbf{Infra.Market}}{\textbf{Jul 2023 -- Mar 2024}}
+      {Software Engineer I}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Owned backend microservices for Search and Location, delivering APIs consumed across distributed infrastructure to support real-time product discovery and location-based features.}
+        \resumeItem{Troubleshot and resolved concurrency and connection management issues in PostgreSQL-backed services using Gorm ORM and load testing to ensure reliability under scale.}
+        \resumeItem{Standardized API documentation and deployed distributed tracing via New Relic for improved monitoring and cross-team collaboration.}
+        \resumeItem{Developed data pipelines migrating query-optimized datasets from BigQuery to Elasticsearch, enabling efficient search and filtering of usage data.}
+        \resumeItem{Set up automated monitoring with Slack alerts to detect stale data and maintain high data freshness and system health proactively.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Master of Science in Computer Science}{\textbf{Aug 2025 -- May 2027}}
+      {Stony Brook University, New York, USA}{GPA: 4.0/4.0}
+      \resumeItemListStart
+        \resumeItem{\textbf{Coursework}: Database Systems, Analysis of Algorithms, Transformer Architectures \& LLMs}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Bachelor of Engineering in Electronics \& Communication}{\textbf{Aug 2019 -- July 2023}}
+      {Birla Institute of Technology and Science, Pilani, India}{GPA: 8.02/10}
+      \resumeItemListStart
+        \resumeItem{\textbf{Coursework}: Object Oriented Programming, Operating Systems, Data Structures \& Algorithms, Computer Networks}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{RDMA-Accelerated Distributed Transactions} -- \emph{C++, RDMA, Distributed Systems}}{\textbf{Nov 2025 -- Ongoing}}
+          \resumeItemListStart
+            \resumeItem{Architecting RDMA integration for distributed transaction replication targeting 30-50\% latency reduction and 40-60\% CPU improvement over TCP/IP by implementing one-sided RDMA operations for Paxos-based log shipping.}
+            \resumeItem{Designing remote memory layout and RDMA connection management with both two-sided verbs and one-sided operations for commit notifications, researching Motor (OSDI '24), FaRM, and DrTM for low-latency protocols.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{Raft Consensus Protocol} -- \emph{C++, RPC, Distributed Systems}}{\textbf{Sept 2025 -- Nov 2025}}
+          \resumeItemListStart
+            \resumeItem{Implemented Raft consensus algorithm in C++ achieving distributed consensus across 5-node clusters with leader election, log replication, and fault tolerance maintaining 99.9\% availability under network partitions and split-brain scenarios.}
+            \resumeItem{Built custom RPC protocol with RequestVote and AppendEntries handlers, managing timeouts and ensuring sub-5-second leader election with consistent state replication.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{Elasticsearch Configuration Service} -- \emph{Golang, Elasticsearch}}{\textbf{Apr 2025 -- Jul 2025}}
+          \resumeItemListStart
+            \resumeItem{Engineered platform abstraction layer with self-serve RESTful APIs for Elasticsearch operations, enabling teams to provision search infrastructure without specialized expertise.}
+            \resumeItem{Designed Golang backend services for automated index lifecycle management, schema versioning, and query optimization, reducing setup time by 70\% with infrastructure-as-code and rollback capabilities.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+\end{document}
